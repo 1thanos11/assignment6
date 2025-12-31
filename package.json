@@ -1,0 +1,25 @@
+{
+  "name": "assignment6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "moamen-khaled_NodeC45mon&thurs_8-30Pm_online-Assignment6_01033703690.js",
+  "scripts": {
+    "start:dev": "node --watch \"moamen-khaled_NodeC45mon&thurs_8-30Pm_online-Assignment6_01033703690.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1thanos11/assignment6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/1thanos11/assignment6/issues"
+  },
+  "homepage": "https://github.com/1thanos11/assignment6#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mysql2": "^3.16.0"
+  }
+}

@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "7b582730-724c-41eb-a27d-ddca62546a84",
+		"name": "assignment6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37431833"
+	},
+	"item": [
+		{
+			"name": "Creaate Products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/create/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"create",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Suppliers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/create/suppliers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"create",
+						"suppliers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Sales",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/create/sales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"create",
+						"sales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/add/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"add",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Category",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/delete/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"delete",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Contact Number",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/change/contactNumber",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"change",
+						"contactNumber"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD NOT NULL TO Product Name",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/change/productName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"change",
+						"productName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT FreshFoods",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"supplierName\":\"FreshFoods\",\r\n    \"contactNumber\":\"01001234567\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/insert/FreshFoods",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"insert",
+						"FreshFoods"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT Products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\":\"Eggs\", \r\n    \"productPrice\":\"20.00\", \r\n    \"productStockQuantity\":\"40\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/insert/products/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"insert",
+						"products",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT Sale",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quantitySold\":\"2\", \r\n    \"saleDate\":\"2025-05-20\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/insert/2/sale",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"insert",
+						"2",
+						"sale"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE Price",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productPrice\":\"25.00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/update/price/16",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"update",
+						"price",
+						"16"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
